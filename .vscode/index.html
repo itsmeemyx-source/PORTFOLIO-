@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ariane Kimberly T. Romo - Student Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-brand">✦ Ariane Kimberly T. Romo</span>
+</nav>
+
+<!-- ══ SLIDE 1 — HERO ══ -->
+<div class="slide visible" id="slide-hero">
+  <div class="card">
+    <div class="tape" style="top: -15px; left: 38px; transform: rotate(-2deg);">cover page ✿</div>
+    <div class="card-inner">
+      <div class="hero-left">
+        <div class="pill">✦ Meet the ARTist</div>
+        <h1 class="hero-title">Hello, I'm<br><em>Kim</em></h1>
+        <p class="hero-sub">My Student Portfolio ✦</p>
+        <div class="btn-row">
+          <button class="btn btn-primary" onclick="showSlide('about')">About Me →</button>
+        </div>
+      </div>
+      <div class="hero-right">
+<div class="portrait-frame">
+  <img src="c24020dc-a77d-4f3b-a73e-83c5bbf4a94f.jpg" alt="Kim">
+</div>
+
+        <p class="portrait-caption">~ the world through my eyes ~</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SLIDE 2 — ABOUT ME ══ -->
+<div class="slide" id="slide-about">
+  <div class="card">
+    <div class="tape" style="top: -15px; right: 55px; transform: rotate(2.5deg);">about me 🌸</div>
+    <div class="card-inner">
+      <div class="pill">Slide 2 · About Me</div>
+      <h2 class="about-heading">Get to Know Me</h2>
+      <div class="info-grid">
+        <div class="info-field">
+          <span class="lbl">Full Name</span>
+          <span class="val">Ariane Kimberly T. Romo</span>
+        </div>
+        <div class="info-field">
+          <span class="lbl">Program</span>
+          <span class="val">BS Information Technology</span>
+        </div>
+        <div class="info-field">
+          <span class="lbl">School</span>
+          <span class="val">Agusan del Sur State University</span>
+        </div>
+        <div class="info-field">
+          <span class="lbl">Hobbies</span>
+          <span class="val">Reading · Writing · Drawing · Anime · Sleeping</span>
+        </div>
+        <div class="quote-box">
+          <p>"Veni, Vidi, Vici"</p>
+          <span class="quote-attr">— I came, I saw, I conquered</span>
+        </div>
+      </div>
+      <div style="display: flex;gap: .75rem;margin-top: 1.6rem;flex-wrap: wrap;">
+        <button class="btn btn-outline" onclick="showSlide('hero')">← Back</button>
+        <button class="btn btn-primary" onclick="showSlide('journey')">My Journey →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SLIDE 3 — ACADEMIC JOURNEY ══ -->
+<div class="slide" id="slide-journey">
+  <div class="card">
+    <div class="tape" style="top: -15px; left: 65px; transform: rotate(-1.5deg);">my journey ⭐</div>
+    <div class="card-inner">
+      <div class="pill">Slide 3 · Academic Journey</div>
+      <h2 class="journey-heading">Academic Journey</h2>
+      <div class="timeline">
+
+        <!-- ELEMENTARY -->
+        <div class="tl-item" style="animation-delay: .05s">
+          <div class="tl-dot">ES</div>
+          <div class="tl-body">
+            <div class="tl-level">Elementary</div>
+            <div class="tl-school">Salvacion Central Elementary School</div>
+            <div class="tl-achieve">
+              <span>3rd Honorable Mention</span>
+              <span>4th Placer — News Writing Filipino, Division School Press Conference</span>
+              <span>Regional School Press Conference Qualifier</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HIGH SCHOOL -->
+        <div class="tl-item" style="animation-delay: .15s">
+          <div class="tl-dot">HS</div>
+          <div class="tl-body">
+            <div class="tl-level">High School</div>
+            <div class="tl-school">Salvacion National High School</div>
+            <div class="tl-achieve">
+              <span>With Honor</span>
+              <span>3rd Placer — Column Writing Filipino, Division School Press Conference</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SENIOR HIGH -->
+        <div class="tl-item" style="animation-delay: .25s">
+          <div class="tl-dot">SHS</div>
+          <div class="tl-body">
+            <div class="tl-level">Senior High School</div>
+            <div class="tl-school">Father Saturnino Urios College of Bayugan Inc.</div>
+            <div class="tl-achieve">
+              <span>With High Honor</span>
+              <span>2nd Placer — Science & Technology Writing Filipino, Division School Press Conference</span>
+              <span>Editor-in-Chief, Ang Urian Publication</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLLEGE -->
+        <div class="tl-item" style="animation-delay: .35s">
+          <div class="tl-dot">🎓</div>
+          <div class="tl-body">
+            <div class="tl-level">College (Current)</div>
+            <div class="tl-school">Agusan del Sur State University</div>
+            <div class="tl-achieve">
+              <span>BS Information Technology</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="tl-nav">
+        <button class="btn btn-outline" onclick="showSlide('about')">← About Me</button>
+        <button class="btn btn-primary" onclick="showSlide('hero')">Back to Home ↑</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
